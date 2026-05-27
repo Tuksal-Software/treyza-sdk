@@ -1,6 +1,6 @@
 {
   "name": "@treyza/sdk",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0-beta.3",
   "description": "Treyza storefront SDK — hooks, actions, primitives and shadcn-based UI for marketplace components",
   "license": "MIT",
   "type": "module",
@@ -117,6 +117,7 @@
     "@radix-ui/react-tooltip": "^1.2.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
     "lucide-react": "^1.7.0",
     "tailwind-merge": "^3.5.0"
   },
