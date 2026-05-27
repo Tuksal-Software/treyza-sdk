@@ -1,0 +1,97 @@
+name: Bug report
+description: Report a bug or unexpected behavior in @treyza/sdk
+title: "[Bug]: "
+labels:
+  - bug
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report. Please fill out the sections below as completely as possible so we can reproduce and fix the issue quickly.
+
+  - type: input
+    id: sdk-version
+    attributes:
+      label: SDK version
+      description: Output of `npm list @treyza/sdk` or the version from your `package.json`.
+      placeholder: 0.1.0-beta.1
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js version
+      placeholder: v20.19.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: subpath
+    attributes:
+      label: Affected subpath
+      description: Which import path is involved?
+      multiple: true
+      options:
+        - "@treyza/sdk"
+        - "@treyza/sdk/hooks"
+        - "@treyza/sdk/actions"
+        - "@treyza/sdk/ui"
+        - "@treyza/sdk/primitives"
+        - "@treyza/sdk/provider"
+        - "@treyza/sdk/utils"
+        - "@treyza/sdk/types"
+        - "@treyza/sdk/lib/utils"
+        - "@treyza/sdk/tailwind.css"
+        - "Other / not sure"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Minimal code snippet or repo that reproduces the issue.
+      render: tsx
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console / build logs
+      description: Paste any relevant errors or stack traces.
+      render: shell
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
+        - label: I am using the latest published version of `@treyza/sdk`
+          required: false

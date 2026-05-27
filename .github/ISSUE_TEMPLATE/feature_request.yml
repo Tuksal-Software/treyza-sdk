@@ -1,0 +1,67 @@
+name: Feature request
+description: Suggest a new feature or improvement for @treyza/sdk
+title: "[Feature]: "
+labels:
+  - enhancement
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. Please describe the problem you are trying to solve and the proposed API as clearly as possible.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem are you trying to solve? Why does the current SDK fall short?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Proposed surface
+      description: Where would this feature live?
+      multiple: true
+      options:
+        - "Hook (@treyza/sdk/hooks)"
+        - "Action (@treyza/sdk/actions)"
+        - "UI component (@treyza/sdk/ui)"
+        - "Primitive (@treyza/sdk/primitives)"
+        - "Provider (@treyza/sdk/provider)"
+        - "Type (@treyza/sdk/types)"
+        - "Utility (@treyza/sdk/utils)"
+        - "Build / tooling"
+        - "Documentation"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed API
+      description: Sketch the API you'd like to see — function signature, props, sample usage.
+      render: tsx
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches you considered and why you ruled them out.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Links, references, mockups, related projects.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
