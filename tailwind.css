@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@source "./src/ui";
+@source "./src/primitives";
+@source "./src/hooks";
+
+@theme inline {
+  --color-background: var(--background, #ffffff);
+  --color-foreground: var(--foreground, #0a0a0a);
+  --color-primary: var(--primary, #171717);
+  --color-primary-foreground: var(--primary-foreground, #fafafa);
+  --color-secondary: var(--secondary, #f5f5f5);
+  --color-secondary-foreground: var(--secondary-foreground, #171717);
+  --color-muted: var(--muted, #f5f5f5);
+  --color-muted-foreground: var(--muted-foreground, #737373);
+  --color-accent: var(--accent, #f5f5f5);
+  --color-accent-foreground: var(--accent-foreground, #171717);
+  --color-destructive: var(--destructive, #ef4444);
+  --color-destructive-foreground: var(--destructive-foreground, #fafafa);
+  --color-border: var(--border, #e5e5e5);
+  --color-input: var(--input, #e5e5e5);
+  --color-ring: var(--ring, #171717);
+  --radius-sm: calc(var(--theme-radius, 0.5rem) - 4px);
+  --radius-md: calc(var(--theme-radius, 0.5rem) - 2px);
+  --radius-lg: var(--theme-radius, 0.5rem);
+  --radius-xl: calc(var(--theme-radius, 0.5rem) + 4px);
+}
