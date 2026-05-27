@@ -91,6 +91,17 @@ Import the SDK's Tailwind preset in your CSS:
 
 This provides shadcn-compatible CSS variables (`--background`, `--foreground`, `--primary`, etc.) with sensible defaults that can be overridden via CSS custom properties.
 
+## Documentation
+
+Detayli rehberler `docs/` altinda:
+
+- [docs/quickstart.md](./docs/quickstart.md) — Kurulum, provider, ilk komponent
+- [docs/hooks.md](./docs/hooks.md) — Hook referansi
+- [docs/primitives.md](./docs/primitives.md) — Layout primitive'leri
+- [docs/actions.md](./docs/actions.md) — Imperatif action'lar
+- [docs/preview-mode.md](./docs/preview-mode.md) — Live vs preview davranisi
+- [docs/mcp-guide.md](./docs/mcp-guide.md) — Claude / Cursor ile bilesen uretimi
+
 ## License
 
 [MIT](./LICENSE)
